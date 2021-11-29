@@ -1,0 +1,26 @@
+.span{
+cursor: pointer;
+border-radius: 5px;
+text-align: center;
+display: block;
+height: 110px;
+margin: 5px;
+position: relative;
+width: 110px;
+background: #fff;
+padding: 10px;
+border: 1px solid #ededed;
+box-shadow: 0 0 3px rgb(0 0 0 / 16%);
+transition: all .5s ease-out 0s;
+-webkit-transition: all .5s ease-out 0s;
+font-size: 13px;
+color: #333;
+overflow: hidden;
+
+}
+.img{
+    width: 57px;
+    display: block;
+    height: 57px;
+    margin: 0 auto;
+}
