@@ -1,6 +1,6 @@
 import './App.css';
 import NavBar from './components/Navbar/navbar';
-import Carousel from './pages/carousel'
+import Carousel from './pages/Carousel'
 import Kategory from './pages/kategory'
 import Product from './pages/product'
 import { BrowserRouter as Router } from "react-router-dom";

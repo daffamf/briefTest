@@ -1,16 +1,24 @@
-import * as React from 'react';
+import React from 'react';
 import './kategory.css'
-import Img1 from '../../img/1.jpeg'
 
 
-export default function BoxComponent() {
+
+
+const BoxComponent = () => {
+    
+
     return (
-        <div>
-            <div className='span' >
-                <img className='img' src={Img1} alt="otomotif" />
-                otomotif
-            </div>
-        </div>
+        <>
+            <section>
+                    <div className='span' >
+                        <img className='img' src='https://assets.tokodistributor.com/dev-category-icon/9d0c0944ccd05a4d3b390465266fa5b9.png' alt="" />
+                        Sembako
+                        
+                    </div>
+                    
 
+            </section>
+        </>
     );
 }
+export default BoxComponent

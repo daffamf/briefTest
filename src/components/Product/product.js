@@ -1,40 +1,52 @@
+
 import React, { useState } from 'react'
-import Img1 from '../../img/1.jpeg'
 import './product.css'
 
-const product = () => {
-    // const [noOfElement, setnoOfElemet] = useState(20)
-    // const loadmore = () => {
-    //     setnoOfElemet(noOfElement + noOfElement);
+const Product = ({ items }) => {
 
-    // }
+
+    const [visable, setVisable] = useState(3)
+
+    const showMoreItems = () => {
+        setVisable((prevValue) => prevValue + 3)
+    }
+
+
+    console.log('ddd', items.data)
+    
 
     return (
         <section className='py-4'>
+            
             <h1 className='container'> Product List</h1>
             <hr />
-            <div className='row justify-content-center'>
-                <div className="col-11 col-md-6 col-lg-3 nx-0 mb-4">
-                    <div className='card p-0 overflow-hidden h-100 shadow'>
-                        <img src={Img1} className='card-img-top' />
-                        <div className="card-body">
-                            <h5 className='card-tittle'>Card Tittle</h5>
-                            <p className='Card-text'>Card Desc</p>
+            {/* {items.data.filter(item => ( */}
+
+                <div className='row justify-content-center' key={''}>
+                    <div className="col-11 col-md-6 col-lg-3 nx-0 mb-4" >
+                        <div className='card p-0 overflow-hidden h-100 shadow'>
+                            <img src={`https://assets.tokodistributor.com/product/8ca84f7ced38aba69595f4516bb89284`} className='card-img-top' />
+                            <div className="card-body">
+                                <h5 className='card-tittle'>{'BANDUNG'}</h5>
+                                <p className='Card-text'>{'Rp.4200000'}</p>
+                            </div>
+
                         </div>
 
                     </div>
-                </div>
 
-            </div>
-           
-            <button className='load'  onClick={() => ('')}>
+                </div>
+                
+            {/* ))} */}
+
+            <button className='load' onClick={showMoreItems}>
                 Lihat Lainnyah..
             </button>
-          
+
             <hr />
 
         </section>
     )
 }
 
-export default product
+export default Product

@@ -17,10 +17,12 @@ font-size: 13px;
 color: #333;
 overflow: hidden;
 
+
 }
 .img{
     width: 57px;
     display: block;
     height: 57px;
     margin: 0 auto;
+    
 }
