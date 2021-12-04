@@ -7,7 +7,7 @@ function NavBar() {
         <>
             <nav className="navbar navbar-expand-lg navbar-primary fixed-top">
                 <div className="nav-container">
-                    <div className="nav-logo container">
+                    <div className="nav-logo ">
                         Brief Test
                         <i className="fas fa-code"></i>
                     </div>

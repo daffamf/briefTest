@@ -4,21 +4,25 @@ import './kategory.css'
 
 
 
-const BoxComponent = () => {
-    
+function KategoryComponent({ items }) {
 
     return (
-        <>
-            <section>
-                    <div className='span' >
-                        <img className='img' src='https://assets.tokodistributor.com/dev-category-icon/9d0c0944ccd05a4d3b390465266fa5b9.png' alt="" />
-                        Sembako
-                        
-                    </div>
-                    
+        <div>
+            {items
+                ? items.data.map((item) => (
+                    <lu>
+                        <div className='span' key={item.category_id}>
+                            <img className='img' src={item.icon} alt="" />
+                            {item.category_name}
+                        </div>
+                    </lu>
+                ))
+                : "loading..."
+            }
 
-            </section>
-        </>
+
+        </div>
+
     );
 }
-export default BoxComponent
+export default KategoryComponent

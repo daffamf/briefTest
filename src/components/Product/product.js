@@ -1,52 +1,36 @@
 
-import React, { useState } from 'react'
+import React from 'react'
 import './product.css'
 
-const Product = ({ items }) => {
-
-
-    const [visable, setVisable] = useState(3)
-
-    const showMoreItems = () => {
-        setVisable((visable) => visable + 3)
-    }
-
-
-    console.log('ddd', items.data)
-
-
+function Product({ datas }) {
     return (
-        <section className='py-4'>
-
-            <h1 className='container'> Product List</h1>
+        <div>
+            <h1 className=''> Product List</h1>
             <hr />
-            {/* {items.map(item => { */}
-
-                <div className='row justify-content-center' >
-                    <div className="col-11 col-md-6 col-lg-3 nx-0 mb-4" >
-                        <div className='card p-0 overflow-hidden h-100 shadow'>
-                            <img src={'https://assets.tokodistributor.com/product/95e262e4bede7c7548f8a2c19f1ecefa.jpg'} className='card-img-top' />
-                            <div className="card-body">
-                                <h5 className='card-tittle'>{'BANDUNG'}</h5>
-                                <h2 className='card-tittle' aria-disabled>{'sepatu'}</h2>
-                                <p className='Card-text'>{'Rp.4200000'}</p>
-                            </div>
+            {datas && datas.data.map(item =>
+                <div class="container" key={item.product_code}>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src={item.image_uri} alt="rover" />
+                        </div>
+                        <div class="card-body">
+                            <span class="tag tag-teal">{item.sub_menucategory_name}</span>
+                            {item.product_name}
+                            <h5 className="harga">
+                                RP.{item.normal_price}
+                            </h5>
+                            <h5 >{item.location}</h5>
 
                         </div>
-
                     </div>
-
                 </div>
-
-        {/* })} */}
-            <button className='load' onClick={showMoreItems}>
+            )}
+            <button className='load'>
                 Lihat Lainnyah..
             </button>
-
-
             <hr />
+        </div>
 
-        </section>
     )
 }
 
