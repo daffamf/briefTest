@@ -16,10 +16,16 @@ transition: all .5s ease-out 0s;
 font-size: 13px;
 color: #333;
 overflow: hidden;
-
-
+ 
 
 }
+
+.span:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+
 .img{
     width: 57px;
     display: block;
@@ -27,3 +33,5 @@ overflow: hidden;
     margin: 0 auto;
     
 }
+
+
