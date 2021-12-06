@@ -37,7 +37,7 @@
     color: rgb(237, 48, 44);
     font-weight: 700;
     font-size: 16px;
-    margin-left: 530px;
+    margin-left: 490px;
 }
 
 
@@ -57,9 +57,13 @@
   }
   .container {
     display: flex;
-    width: 1040px;
+    padding-left: 300px;
+    width: 100px;  
     justify-content: space-evenly;
     flex-wrap: wrap;
+ 
+    
+
   }
   .card {
     margin: 10px;
@@ -125,29 +129,13 @@
     color: #545d7a;
   }
   .harga{
-    padding-top: 0;
-    position: relative;
-    font-weight: 700;
+   
     color: #ed302c;
-    height: 26px;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    margin-top: 8px;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
+    
+    
   }
  
-  .container{
-    width: 90%;
-    padding: 20px;
-    margin: 100px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+  
   .box{
     width: 250px;
     margin: 0 10px;
@@ -155,7 +143,6 @@
     transition: 1s;
   }
 
-  
-  
+
   
   

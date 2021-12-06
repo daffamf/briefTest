@@ -16,6 +16,7 @@ transition: all .5s ease-out 0s;
 font-size: 13px;
 color: #333;
 overflow: hidden;
+
  
 
 }
@@ -34,4 +35,10 @@ overflow: hidden;
     
 }
 
+.row{
+    padding-right: 120px;
+    position: relative;
+
+
+}
 

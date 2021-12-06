@@ -1,14 +1,24 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import './product.css'
 import Itemcard from './itemCard'
 
-function Product({ datas }) {
+
+function Product({ datas,}) {
+
+    const [load, setload] = useState(5)
+
+    const loadMore = () => {
+        setload((prevvalue) => prevvalue + 10)
+    }
+   
+
     return (
         <div>
             <h1 className=''> Product List</h1>
             <hr />
-            {datas && datas.data.map((item, index) => {
+           
+            {datas && datas.data.slice(0, load).map((item, index) => {
                 return (
                     <Itemcard
                         img={item.image_uri}
@@ -20,7 +30,8 @@ function Product({ datas }) {
                 )
 
             })}
-            <button className='load'>
+          
+            <button className='load' onClick={loadMore}>
                 Lihat Lainnyah..
             </button>
             <hr />
