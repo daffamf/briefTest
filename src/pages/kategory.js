@@ -15,7 +15,7 @@ const Kategory = () => {
     }, [])
 
     return (
-        <div>
+        <div className=''>
             <Components items={items} />
 
         </div>

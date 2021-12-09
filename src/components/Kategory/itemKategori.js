@@ -3,7 +3,7 @@ import React from 'react';
 const ItemKategori = (props) => {
     return (
         <div>
-            <div className="row">
+            <div className="">
             <div className='span'>
                 <img className='img' src={props.img} alt="" />
                 {props.desc}
